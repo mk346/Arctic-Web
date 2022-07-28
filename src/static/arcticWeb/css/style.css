@@ -1,0 +1,424 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.navbar{
+	display: flex;
+	align-items: left;
+	padding: 20px;
+}
+.nav{
+	text-align: left;
+}
+
+#menu-items > li > a {
+	text-decoration: none;
+
+}
+
+#main-nav{
+	min-height: 8vh;
+	font-size: 15px;
+}
+.btn{
+	padding: .5rem 2.5rem;
+	font-size: .95rem;
+	font-weight: 600;
+	color: #fff;
+	background: #111;
+	border-radius: remy(35px);
+
+}
+nav ul{
+	list-style-type: none;
+	display: inline-block;
+}
+nav ul li a{
+	text-align: left;
+}
+#menu-items{
+	color: black;
+}
+.menu{
+	width: 28px;
+	margin-left: 20px;
+	display: none;
+
+}
+nav ul li{
+	margin-right: 20px;
+	text-align: left;
+	color: black;
+	display: inline-block;
+}
+nav ul li a{
+	color: white;
+}
+.header{
+	background-color: steelblue;
+
+}
+.header .row{
+	margin-top: 70px;
+}
+p{
+	color: black;
+}
+.container-1{
+	background: linear-gradient(rgba(0,0,0.5),rgba(0,0,50,0.5)),url("../images/city1.jpg");
+	background-size: cover;
+	background-position: center;
+	max-width: 1500px;
+	color: white;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-2{
+	flex-basis: 100%;
+	min-width: 500px;
+}
+.col-2 > img{
+	flex-basis: 50%;
+	transition: transform 0.5s;
+	opacity: 1;
+}
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+}
+.col-2 > p {
+	color: white;
+}
+
+.button{
+	display: inline-block;
+	background: #ff523b;
+	color: #fff;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	transition: background 8.5s;
+}
+.button:hover{
+	background: #563434;
+}
+.categories{
+	margin: 70px 0;
+}
+.col-3{
+	flex-basis: 30%;
+	display: flex;
+	padding: 10px;
+	flex-wrap: wrap ;
+	flex-direction: row;
+	justify-content: space-around;
+	min-width: 250px;
+	margin-bottom: 30px;
+	transition: transform 0.5s;
+}
+.col-3:hover{
+	transform: translate(-5px);
+}
+.col-3 img{
+	width: 100%;
+}
+.sm-con {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+.small-container{
+    background: radial-gradient(#fff, #ffd6d6);
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.col-4{
+	flex-basis: 100%;
+	padding: 50px 0;
+	min-width: 1000px;
+	margin: 50px;
+	transition: transform 0.5s;
+}
+.col-4 img{
+	width: 100%;
+}
+.title{
+	text-align: center;
+	margin: 0 auto 80px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+}
+.title:after{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 470px;
+	transform: translate();
+
+}
+h4{
+	color: #555;
+	font-weight: normal;
+	font-size: 20px;
+}
+.col-4:hover{
+	transform: translate(-5px);
+}
+.hotel-page,.car-page,.flight-page{
+	padding: 50px;
+	background: radial-gradient(#fff, #ffd6d6);
+	max-height: auto;
+}
+.form-container{
+	width: 400px;
+	height: 700px;
+	position: relative;
+	padding: 20px 0;
+	margin: auto;
+}
+.col-2{
+	padding-left: 50px;
+}
+.col-2 img{
+	max-width: 500px;
+	flex-basis: 100%;
+	padding-left: 50px 0;
+	min-width: 250px;
+	margin: 50px;
+	transition: transform 0.5s;
+}
+form button{
+	display: inline-block;
+	margin: 10px 0;
+	border: none;
+}
+form button:focus{
+	outline: none;
+}
+.form-container span{
+	font-weight: bold;
+	padding: 10px 10px;
+	color: black;
+	cursor: pointer;
+	width: 100px;
+	display: inline-block;
+}
+.form-container form{
+	padding-left: 10px;
+	max-width: 400px;
+	height: 600px;
+}
+
+.form-label > p {
+	color: black !important;
+	font-size: 10px !important;
+}
+
+.help-page,.book-page{
+	max-width: 1500px;
+	margin: auto;
+	background: radial-gradient(#fff, #ffd6d6);
+
+}
+.help-page h3{
+	text-align: center;
+	text-transform: uppercase;
+	color: black;
+}
+.help-page h1{
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	color: black;
+}
+.help-page p{
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: black;
+}
+.page-container{
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: auto;
+	text-align: center;
+	color: #555;
+	transition: all 4s ease-in-out;
+}
+
+.bttn {
+	border-radius: 30px;
+	width: 30%;
+	background-color: slategray;
+	line-height: 230%;
+}
+.bttn:hover {
+	background-color: steelblue;
+}
+
+.container-form {
+	background-color: floralwhite;
+}
+
+.container{
+	max-width: 1500px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.account-page{
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+.account-page h3{
+	color: white;
+	font-size: 20px;
+}
+.content-section{
+	max-width: 1500px;
+	background: radial-gradient(#fff, #ffd6d6);
+
+}
+.container-form{
+	margin: 0 auto;
+	width: 75%;
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right: 25px;
+
+}
+.form-control{
+	background: transparent !important;
+}
+
+.pay-container {
+	background: radial-gradient(#fff, #ffd6d6);
+	width: 100%;
+	padding: 50px;
+}
+
+.p-container {
+	padding: 50px;
+	width: 75%;
+}
+
+.logos {
+	padding: 10px;
+	padding-right: 20px;
+	align-items: center;
+	padding-left: 100px;
+
+}
+
+
+/*-----Footer----*/
+.footer{
+	background: #000;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 0 20px;
+}
+.footer p{
+	color: #8a8a8a;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-1{
+	flex-basis: 30%;
+}
+.footer-col-2{
+	flex: 1;
+	text-align: center;
+}
+.footer-col-2, .btn{
+	width: 180px;
+	margin-bottom: 20px;
+
+
+}
+.footer-col-3,.footer-col-4{
+	flex-basis: 12%;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
+.app-logo{
+	margin-top: 20px;
+}
+.app-logo img{
+	width: 140px;
+}
+.footer hr{
+	border: none;
+	background: #b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+
+}
+.copyright{
+	text-align: center;
+}
+
+
+/*-----End of Footer----*/
+
+/*----Media query for menu---*/
+@media only screen and(max-width: 800px){
+	nav ul{
+		position: absolute;
+		top: 70px;
+		left: 0;
+		background: #333;
+		width: 100%;
+		overflow: hidden;
+		transition: 0.5s;
+	}
+	nav ul li{
+		display: block;
+		margin-right: 50px;
+		color: #0000FF;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.menu{
+		display: block;
+		cursor: pointer;
+	}
+}
+
+/*---Media query for less than 600 screen size*/
+@media only screen and (max-width: 600px){
+	.row{
+		text-align: center;
+	}
+	.col-2,.col-3,.col-4{
+		flex-basis: 100%;
+	}
+}
+
+
+

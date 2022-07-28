@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="flight-page">
+	{% if search %}
+	<div class="row mt-4" >
+     <h3>Search Results For Flights Flying From {{search}}</h3>
+        <table class="table table-secondary table-striped table-hover table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">Flight Name</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Depart Date</th>
+              <th scope="col">Depart Time</th>
+              <th scope="col">Book</th>
+
+
+            </tr>
+          </thead>
+          <tbody>
+            {% for result in results %}
+            <tr>
+              <td>{{result.flight_name}}</td>
+              <td>{{result.Destination}}</td>
+              <td>{{result.depart_date}}</td>
+              <td>{{result.depart_time}}</td>
+              <td><a href="{% url 'book' %}" class="btn btn-success">Book Now</a></td>
+            </tr>
+            {% endfor %} 
+          </tbody>
+           
+        </table>
+  </div>
+    {% else %}  
+	  <h4>Welcome To Our Flights Page</h4>
+    <p>Let Us Find A Convenient And Affordable Plane For You <br> In A Blink Of A Second</p>
+    <h4>Fill Out The Form And Lets Handle The Rest For You <br> Lets Go!!</h4>
+     
+	<div class="row">
+		<div class="col-2">
+			<div class="form-container">
+				<form action="" method="post" class="form-control form-control-sm">
+					{% csrf_token %}
+					{{ form.as_p }}
+					<center>
+					<div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Search</button>
+          </div>
+          </center>
+					
+				</form>
+					
+				
+			</div>
+			
+		</div>
+		<div class="col-2">
+			<img src="{% static 'arcticWeb/images/plane3.jpg' %}">
+			
+		</div>
+		
+	</div>
+	{% endif %}
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

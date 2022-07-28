@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+ <div class="container-1">
+    <div class="col-md-8">
+        {% if messages %}
+         {% for message in messages %}
+         <div class="alert alert-{{message.tags}}">
+            {{ message }}  
+         </div>
+         {% endfor  %}
+        {% endif %}
+    </div> 
+     <br/><br><br/>
+     <br/><br><br/>
+    <div class="row ">
+        <div class="col-2">
+            <h1>Your Leisure<br> Is Guaranteed!</h1>
+            <p>Try Arctic Now<br> And You Will Not<br> Be Dissapointed</p>
+            <a href="" class="button">Explore Now</a>
+        </div>
+        <div class="col-2">
+            <img src="{% static 'arcticWeb/images/hotel11.jpg' %}" width="500px"> 
+        </div>
+    </div>
+    <br/><br><br/>
+    <br/><br><br/>
+    <br/><br><br/>
+    <br/><br><br/>
+    <br/><br><br/>
+
+</div>
+
+<!-- Featured categories -->
+<div class="categories">
+    <div class="small-container">
+      <div class="sm-con">
+       <div class="col-3">
+        <img src="{% static 'arcticWeb/images/ass.png' %}">
+       </div>
+       <div class="col-3">
+        <img src="{% static 'arcticWeb/images/wedd.png' %}">
+       </div>
+       <div class="col-3">
+        <img src="{% static 'arcticWeb/images/conf.png' %}">
+       </div>
+       <div class="col-3">
+        <img src="{% static 'arcticWeb/images/tour.png' %}">
+       </div>
+       <div class="col-3">
+        <img src="{% static 'arcticWeb/images/biz.png' %}">
+       </div>
+       <div class="col-3">
+        <img src="{% static 'arcticWeb/images/wedd2.jpg' %}">
+       </div>
+       <div class="col-3">
+        <img src="{% static 'arcticWeb/images/wedd3.jpg' %}">
+       </div>
+       <div class="col-3">
+        <img src="{% static 'arcticWeb/images/birthday2.jpg' %}">
+       </div>
+    </div> 
+</div >
+</div>
+
+ 
+<!-- Featured luxuries -->
+<div class="small-container">
+ <h2 class="title">Featured Luxuries</h2>
+<div class="row">
+  <div class="col-4">
+    <img src="{% static 'arcticWeb/images/hotel1.jpg' %}">
+      <h4>Beautiful and Attractive Scenes</h4>
+    </div>
+    <div class="col-4">
+    <img src="{% static 'arcticWeb/images/hotel4.jpg' %}">
+        <h4>Extreme Comfortable Meeting Rooms</h4>
+    </div>
+    <div class="col-4">
+    <img src="{% static 'arcticWeb/images/hotel5.jpg' %}">
+        <h4>Vast Open Outdoor Relaxing Platforms</h4>
+    </div>
+    <div class="col-4">
+    <img src="{% static 'arcticWeb/images/hotel7.jpg' %}">
+        <h4>Affordable Hotels For Couples</h4>
+    </div>
+    <div class="col-4">
+    <img src="{% static 'arcticWeb/images/hotel8.jpg' %}">
+      <h4>Big and Well Lit Meeting rooms</h4>  
+    </div>
+    <div class="col-4">
+    <img src="{% static 'arcticWeb/images/hotel9.jpg' %}">
+        <h4>Collection Of the Best Hotels</h4>
+    </div>
+    <div class="col-4">
+    <img src="{% static 'arcticWeb/images/hotel10.jpg' %}">
+        <h4>Affordable and Luxurious Rooms</h4>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="book-page">
+	{% if name %}
+	  <center>
+	    <h3>Thanks {{name}}</h3>
+	    <p>We Received Your Message and The Next Available Agent Will Respond Shortly</p>
+	  </center>
+      <br/><br><br><br><br/>
+      <br/><br><br><br><br/>
+      <br/><br><br><br><br/>
+    {% else %}
+      {% if user.is_authenticated %}
+	<div class="page-container">
+		 <br/><br><br/>
+		<div class="container-form">
+			<form action="" method="post" class="form-control-sm">
+				{% csrf_token %}
+				{{ form.as_p }}
+				<div class="col-auto">
+            <button type="submit" class="btn btn-success mb-3">Proceed To Payment</button>
+         </div>
+			</form>
+			{% else %}
+			<h3>You Need To Login To Continue</h3>
+			{% endif %}
+
+			
+		</div>
+
+    {% endif %}		
+		
+	</div>
+	<br/><br><br/>
+	<br/><br><br/>
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock content %}
