@@ -1,2 +1,5 @@
 *.env
 env/
+main/
+.env
+media_cdn/
